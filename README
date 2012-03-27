@@ -12,7 +12,7 @@ can always override what is being returned by
 executing another return statement.
 
 For the record, here are the compilation & execution
-specifics, not that it's terribly germain given the
+specifics, not that it's terribly germane given the
 conclusion:
 
 OS: Linux 3.0.0-16-generic #28-Ubuntu x86_64 GNU/Linux
