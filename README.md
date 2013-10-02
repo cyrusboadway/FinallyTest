@@ -48,11 +48,11 @@ This seems to be supported by the following test, which illustrates what is ulti
 
 - __"test 3"__:
 	1. create a variable and assign to it the value 1.
-	2. enter a ```try``` block and return the variable + 0 (i.e. ```php return $variable + 0;```).
+	2. enter a ```try``` block and return the variable + 0 (i.e. ```return $variable + 0;```).
 	3. in an attached ```finally``` block, increment the value of the variable.
 	4. test whether the method has returned the original value (1) or the modified value (2).
 
-In this test, PHP returns the original value of the variable (1 + 0), not the modified value of the variable (2 + 0). This would suggest that the language considers the evaluation of the return value to happen before the finally block is executed, and modifications to the variables after the return statement is evaluated _shouldn't_ in fact have an affect on the function's return value. The outcome demonstrated in test 1 of 'exposing' the return value in the finally block is likely an artifact of an attempt to save an additional memory assignment.
+In this test, PHP returns the original value of the variable plus zero (1 + 0), not the modified value of the variable plus zero (2 + 0). This would suggest that the language considers the evaluation of the return value to happen before the finally block is executed, and modifications to the variables after the return statement is evaluated _shouldn't_ in fact have an affect on the function's return value. The outcome demonstrated in test 1 of 'exposing' the return value in the finally block is likely an artifact of an attempt to save an additional memory assignment.
 
 Conclusion
 ----------
