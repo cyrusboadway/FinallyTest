@@ -2,7 +2,7 @@
 
 """
 Illustrates how Python handles return variables when
-a try-finally is in play.
+a try-finally is used.
 
 Output is:
 test 1: inside try

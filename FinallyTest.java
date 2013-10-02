@@ -31,9 +31,9 @@ public class FinallyTest{
 
 		} finally {
 
-			System.out.println("test 1: Inside finally, a=" + a);
+			a++;
 
-			++a;
+			System.out.println("test 1: Inside finally, a=" + a);
 
 		}
 
@@ -54,9 +54,9 @@ public class FinallyTest{
 
 		} finally {
 
-			 System.out.println("test 2: Inside finally, a=" + a);
-
 			 a++;
+
+			 System.out.println("test 2: Inside finally, a=" + a);
 
 			 return a;
 
