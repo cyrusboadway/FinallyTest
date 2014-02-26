@@ -65,7 +65,7 @@ Future Work
 
 Headings like this one are really starting to feel like an undergrad paper. But if this were an undergrad paper, I'd probably have to look at source code. In any case...
 
-As well, I'd like to test other languages which support try-finally, including C# and Objective-C.
+As well, I'd like to test other languages which support try-finally, including C#.
 
 I would like to look at how Java, Javascript, and Python manage memory on a return statement inside of a try. To keep the return value independent from the variables evaluated in the return statement, each would have to allocate additional memory.
 
